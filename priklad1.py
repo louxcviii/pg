@@ -13,10 +13,10 @@ def filtruj_cisla(typ, cisla):
             if c % 2 != 0:
                 vysledek.append(c)
         elif typ == "kladna":
-            if "-" not in str(c) and "0" not in str(c):
+            if c > 0:
                 vysledek.append(c)
         elif typ == "zaporna":
-            if "-" in str(c):
+            if c < 0:
                 vysledek.append(c)
         else:
             vysledek = []

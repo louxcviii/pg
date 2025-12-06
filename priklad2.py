@@ -16,11 +16,12 @@ def spocitej_statistiku(text):
     # Vaše řešení zde
     text_radky = text.splitlines()
     pocet_radku = len(text_radky)
-
+    pocet_znaku = len(text)
+    
     for radek in text_radky:
         slova = radek.split()
         pocet_slov += len(slova)
-        pocet_znaku += len(radek) + 1
+        # pocet_znaku += len(radek) + 1
 
     return pocet_radku, pocet_slov, pocet_znaku
 
